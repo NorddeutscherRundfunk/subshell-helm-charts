@@ -1,11 +1,8 @@
 name: Release Charts
 
 on:
-  workflow_run:
-    workflows:
-      - Test Charts
-    types:
-      - completed
+  push:
+  pull_request:
 
 jobs:
   release:
